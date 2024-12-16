@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dimens Menu-->
+    <dimen name="menu_margin">15dp</dimen>
+
+    <!--Dimens text-->
+    <dimen name="title_size">42sp</dimen>
+    <dimen name="normal_text_size">18sp</dimen>
+    <dimen name="margin_start_text">5dp</dimen>
+    <dimen name="margin_start_tittle_text">12dp</dimen>
+
+    <!--Dimens cardView-->
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="switch_margin">18dp</dimen>
+
+</resources>

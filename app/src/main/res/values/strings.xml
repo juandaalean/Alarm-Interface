@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DDITask6</string>
+
+    <!--Buttom Menu-->
+    <string name="alarma">Alarma</string>
+    <string name="reloj_mundial">Reloj mundial</string>
+    <string name="cronometro">Cronometro</string>
+    <string name="temporizador">Temporizador</string>
+
+    <!--Points Menu-->
+    <string name="editar">Editar</string>
+    <string name="ajustes">Ajustes</string>
+
+    <!--Tittle Text-->
+    <string name="subtitulo">Sonara en 5 horas y 58 minutos</string>
+
+
+</resources>
