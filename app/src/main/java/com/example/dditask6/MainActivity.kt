@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val alarmAdapter = AlarmAdapter { alarm ->
             val status = if (alarm.isActive) "activada" else "desactivada"
-            Toast.makeText(this, "${alarm.title} $status", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "${alarm.title} ha sido $status", Toast.LENGTH_SHORT).show()
         }
 
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun generateAlarms(): List<Alarm> {
         return listOf(
+            Alarm("6:30", "Sonar una vez", false),
             Alarm("7:30", "Sonar una vez | Alarma despertador", true),
             Alarm("7:43", "Sonar una vez | Alarma 2", false),
             Alarm("9:51", "Sonar una vez", false),
@@ -55,8 +56,6 @@ class MainActivity : AppCompatActivity() {
             Alarm("19:30", "Sonar una vez", false),
             Alarm("22:43", "Sonar una vez", false),
             Alarm("23:42", "Sonar una vez | Alarma noche", true),
-            Alarm("23:51", "Sonar una vez", false),
-            Alarm("00:00", "Sonar una vez", false)
         )
     }
 }
