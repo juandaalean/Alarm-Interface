@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="card_view_style">
-        <item name="cardCornerRadius">15dp</item>
-        <item name="cardElevation">8dp</item>
+        <item name="cardCornerRadius">28dp</item>
+        <item name="cardElevation">12dp</item>
     </style>
 
+    <style name="FAB" parent="Widget.Material3.ExtendedFloatingActionButton.Icon.Primary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/baseline_add_24</item>
+        <item name="tint">@color/md_theme_background</item>
+    </style>
+
+    <style name="BottomNavigationViewStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/md_theme_scrim</item> <!-- Cambia el color de los íconos -->
+        <item name="itemTextColor">@color/md_theme_scrim</item> <!-- Cambia el color de las letras -->
+    </style>
+
+    <style name="text_color">
+        <item name="android:textColor">@color/md_theme_scrim</item>
+    </style>
 </resources>

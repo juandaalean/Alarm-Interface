@@ -12,7 +12,7 @@
         android:id="@+id/tittle_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/md_theme_inversePrimary"
+        android:background="@color/md_theme_inversePrimary_mediumContrast"
         android:orientation="vertical"
         android:paddingBottom="@dimen/card_padding"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,14 +24,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginTop="@dimen/menu_margin"
-            android:layout_marginEnd="@dimen/menu_margin"
+            android:layout_marginTop="@dimen/menu_margin_top"
+            android:layout_marginEnd="@dimen/menu_margin_end"
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/baseline_more_vert_24" />
 
         <TextView
             android:id="@+id/alarm_tittle"
+            style="@style/text_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tittle_text"
@@ -42,7 +43,6 @@
         <TextView
             android:id="@+id/alarm_description"
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tittle_text"
             android:fontFamily="@font/syne_semibold"
@@ -55,7 +55,7 @@
         android:id="@+id/recycler_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/md_theme_secondaryFixed"
+        android:background="@color/md_theme_background"
         android:orientation="vertical"
         android:paddingBottom="@dimen/padding_bottom_recycler"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,12 +71,22 @@
         </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/FAB"
+        style="@style/FAB"
+        android:layout_marginBottom="@dimen/switch_margin"
+        android:background="@drawable/rounded_fab"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toTopOf="@id/buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttom_navigation"
+        style="@style/BottomNavigationViewStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/md_theme_tertiaryContainer"
+        android:background="@color/md_theme_inversePrimary_mediumContrast"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

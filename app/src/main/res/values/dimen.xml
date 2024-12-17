@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Dimens Menu-->
-    <dimen name="menu_margin">18dp</dimen>
+    <dimen name="menu_margin">15dp</dimen>
+    <dimen name="menu_margin_end">6dp</dimen>
+    <dimen name="menu_margin_top">22dp</dimen>
 
     <!--Dimens Recycler-->
     <dimen name="padding_bottom_recycler">222dp</dimen>
-
 
     <!--Dimens text-->
     <dimen name="title_size">42sp</dimen>

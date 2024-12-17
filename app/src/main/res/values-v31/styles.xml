@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="FAB">
+                <item name="android:layout_width">56dp</item>
+                <item name="android:layout_height">56dp</item>
+                <item name="backgroundTint">@color/md_theme_secondary</item>
+                <item name="android:src">@drawable/baseline_add_24</item>
+                <item name="android:scaleType">fitCenter</item>
+                <item name="elevation">6dp</item>
+                <item name="tint">@color/md_theme_background</item>
+                <item name="cornerSize">15dp</item>
+                <item name="android:clipToOutline">true</item>
+        </style>
+</resources>
