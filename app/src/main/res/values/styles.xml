@@ -6,7 +6,7 @@
         <item name="cardElevation">12dp</item>
     </style>
 
-    <style name="FAB" parent="Widget.Material3.ExtendedFloatingActionButton.Icon.Primary">
+    <style name="FAB" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:src">@drawable/baseline_add_24</item>

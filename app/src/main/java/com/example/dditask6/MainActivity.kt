@@ -7,12 +7,14 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view_alarm)
+        val FAButton: ImageButton = findViewById(R.id.FAB)
 
         val alarmAdapter = AlarmAdapter { alarm ->
             val status = if (alarm.isActive) "activada" else "desactivada"
@@ -35,6 +38,10 @@ class MainActivity : AppCompatActivity() {
         val pointsMenu: ImageView = findViewById(R.id.points_menu)
         pointsMenu.setOnClickListener { view ->
             showMenuPopup(view)
+        }
+
+        FAButton.setOnClickListener {
+            Toast.makeText(this, "Añadir alarma", Toast.LENGTH_SHORT).show()
         }
     }
 
